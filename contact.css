@@ -1,0 +1,141 @@
+body {
+  margin :0;
+}
+.headerColor-default {
+  color: #282F35;
+  /* （画像よりも下までスクロールした時に変えたい文字色） */
+}
+.contactslide{
+position:relative;
+}
+
+
+.contactslide img{
+position:absolute;
+left:0;
+top:0;
+z-index:-10;
+}
+
+.conteiner {
+  width :1200px;
+  margin :0 auto;
+}
+
+.headerNav {
+  width :100%;
+  position: fixed;
+  top :0;
+  z-index: 100;
+  transition: all 0.3s;
+}
+
+.header_conteiner {
+  width :1200px;
+  margin :0 auto;
+  display:flex;
+  justify-content: space-between;
+}
+
+.headerNav ul {
+  display :flex;
+}
+
+.headerNav ul li a{
+  color :#fff;
+  font-family: 'Noto Serif';
+  padding-right :30px;
+  text-decoration: none;
+  font-style: italic;
+}
+
+.headerNav li {
+  list-style: none;
+}
+
+.headerTitle h1{
+  color :#fff;
+  font-family: 'Noto Serif';
+  font-size :26px;
+  font-style:Italic;
+}
+
+.header_contact {
+  text-align: center;
+  display :flex;
+  flex-direction: column;
+  padding-top :150px;
+}
+
+.header_contact h1 {
+  color :#fff;
+  font-family: 'Noto Serif';
+  font-size :60px;
+  margin-bottom :0;
+  letter-spacing: 0.1em;
+  font-style: italic;
+}
+
+.inerLine {
+  width :1000px;
+  margin :0 auto;
+}
+
+.contactSubText p{
+  font-size :90px;
+  font-family: 'Noto Serif';
+  color :#3B3E40;
+  margin-top :0;
+  padding-left :30px;
+}
+
+form{
+  display :flex;
+  flex-direction: column;
+  width :700px;
+  margin :0 auto;
+  padding-top :100px;
+  padding-bottom :100px;
+  font-family: 'Noto Serif JP';
+}
+
+dl {
+  display :flex;
+  flex-direction: column;
+}
+
+dd{
+  margin-left :0;
+}
+.text{
+  width :700px;
+  height :30px;
+}
+
+textarea {
+  width :700px;
+  height :170px;
+}
+
+.button {
+  padding :20px 85px;
+  border-radius: 60px;
+  display: inline-block;
+  box-shadow: 0 0 3px #000;
+  background-color:#F7D43F;
+  font-family: 'Noto Serif';
+  font-weight: bold;
+}
+
+.submitButton{
+  width :235px;
+  margin :0 auto;
+  padding-top :80px;
+}
+
+footer {
+  height :80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

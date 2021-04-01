@@ -1,0 +1,457 @@
+body {
+  margin :0;
+}
+.headerColor-default {
+  color: #282F35;
+  /* （画像よりも下までスクロールした時に変えたい文字色） */
+}
+.slide{
+position:relative;
+height :100vh;
+}
+
+
+.slide img{
+position:absolute;
+left:0;
+top:0;
+z-index:-10;
+}
+
+.conteiner {
+  width :1200px;
+  margin :0 auto;
+}
+
+.headerNav {
+  width :100%;
+  position: fixed;
+  top :0;
+  z-index: 100;
+  transition: all 0.3s;
+}
+
+.header_conteiner {
+  width :1200px;
+  margin :0 auto;
+  display:flex;
+  justify-content: space-between;
+}
+
+.headerNav ul {
+  display :flex;
+}
+
+.headerNav ul li a{
+  color :#fff;
+  font-family: 'Noto Serif';
+  padding-right :30px;
+  text-decoration: none;
+  font-style: italic;
+}
+
+.headerNav a:hover {
+  color :pink;
+}
+
+.headerNav li {
+  list-style: none;
+}
+
+.headerTitle h1{
+  color :#fff;
+  font-family: 'Noto Serif';
+  font-size :26px;
+  font-style:Italic;
+}
+
+.headerText {
+  display :flex;
+  flex-direction: column;
+  padding-top :250px;
+}
+
+.headerText h1 {
+  color :#fff;
+  font-family: 'Noto Serif';
+  font-size :70px;
+  margin-bottom :0;
+  letter-spacing: 0.1em;
+}
+
+.headerText h2 {
+  color :#fff;
+  font-family: 'Noto Serif JP';
+  font-size :40px;
+  margin-top :10px;
+  letter-spacing: 0.1em;
+  margin-left :40px;
+}
+
+.inerLine {
+  width :1000px;
+  margin :0 auto;
+}
+
+.conceptTitle h1{
+  padding-top :100px;
+  font-family: 'Noto Serif';
+  font-size :60px;
+  font-style:oblique;
+}
+
+.conceptTitle {
+display: flex;
+align-items: center;
+}
+.conceptTitle:after {
+margin-top :100px;
+border-top: 5px solid;
+content: "";
+flex-grow: 0.2;
+}
+.conceptTitle:after {
+margin-left: 3rem;
+}
+
+.concept {
+  color :#282F35;
+}
+
+.conceptSub {
+  text-align: center;
+  font-family: 'Noto Serif JP';
+}
+
+.conceptSub p {
+  font-size :30px;
+}
+
+.conceptItems {
+  display :flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top :80px;
+}
+
+.conceptText p {
+  font-family: 'Noto Serif JP';
+  font-size :16px;
+  letter-spacing: 0.1em;
+}
+
+.conceptBottom {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.conceptBottom p {
+  font-size :90px;
+  font-family: 'Noto Serif';
+  color :#F3F3F3;
+  font-weight: bold;
+  margin-top :70px;
+}
+
+.worksTitle {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.worksTitle h1 {
+  font-family: 'Noto Serif';
+  font-size :60px;
+  color :#fff;
+  font-style:oblique;
+}
+
+.worksTitle::after{
+  margin-top :80px;
+  border-top: 5px solid;
+  content: "";
+  flex-grow: 0.2;
+  margin-left: 3rem;
+  color :#fff;
+}
+
+.works {
+  background-image: url(img/works-bgi@2x.jpg);
+  background-size :cover;
+  width :1280px;
+}
+
+.worksItems {
+  display :flex;
+  width :1000px;
+  margin :0 auto;
+  padding-top :10px;
+  justify-content: space-between;
+  padding-bottom :80px;
+}
+
+.worksItem{
+  box-shadow: 0 0 8px #000;
+}
+
+.worksText {
+  background-color :#fff;
+}
+
+.worksText p {
+  margin-top :-6px;
+  height :130px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1.8em;
+  margin-bottom :0;
+  font-family: 'Noto Serif JP';
+}
+
+.worksButton {
+  text-align: center;
+  background-color :#F7D43F;
+  padding :20px 70px;
+  width :235px;
+  margin :0 auto;
+  border-radius: 60px;
+  box-shadow: 0 0 3px #000;
+}
+
+.worksButton a {
+  text-decoration: none;
+  color :#171717;
+  font-family: 'Noto Serif';
+  font-weight: bold;
+}
+
+.p p{
+  font-size :90px;
+  font-family: 'Noto Serif';
+  color :#4C4D4F;
+  padding-bottom :50px;
+  margin-top :50px;
+}
+
+.serviceTitle {
+  display: flex;
+  align-items: center;
+}
+
+.serviceTitle h1{
+  font-family: 'Noto Serif';
+  font-size :60px;
+  color :#282F35;
+  font-style:oblique;
+  margin-bottom :80px;
+}
+
+.serviceTitle::after{
+  border-top: 5px solid;
+  content: "";
+  flex-grow: 0.2;
+  margin-left: 3rem;
+  color :#282F35;
+}
+
+.serviceItems {
+  display :flex;
+  justify-content: space-between;
+}
+
+.serviceItem1{
+  background-image: url(img/service-img01@2x.jpg);
+  flex :3;
+  height :320px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.serviceItem2{
+  background-image: url(img/service-img02@2x.jpg);
+  flex :3;
+  height :320px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.serviceItem3{
+  background-image: url(img/sevice-img03@2x.jpg);
+  flex :3;
+  height :320px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.serviceText p{
+  display: block;
+  font-size :40px;
+  color :#fff;
+  font-family: 'Noto Serif';
+  font-style:oblique;
+  position: absolute;
+  top :30%;
+  left :30%;
+}
+
+.serviceItem3:hover::before{
+    background-color: rgba(0,0,0,0.5);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    content: ' ';
+}
+
+.serviceItem2:hover::before{
+    background-color: rgba(0,0,0,0.5);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    content: ' ';
+}
+
+.serviceItem1:hover::before{
+    background-color: rgba(0,0,0,0.5);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    content: ' ';
+}
+
+.serviceSub {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.serviceSub p {
+  font-size :90px;
+  font-family: 'Noto Serif';
+  color :#F3F3F3;
+  font-weight: bold;
+  margin-top :70px;
+}
+
+.contact {
+  background-image :url(img/works-bgi@2x.jpg);
+  height :90vh;
+}
+
+.contactTitle {
+  display :flex;
+  justify-content: flex-end;
+}
+
+.contactTitle h1 {
+  font-family: 'Noto Serif';
+  font-size :60px;
+  color :#fff;
+  font-style:oblique;
+}
+
+.contactTitle::after{
+  margin-top :80px;
+  border-top: 5px solid;
+  content: "";
+  flex-grow: 0.2;
+  margin-left: 3rem;
+  color :#fff;
+}
+
+.contactButton {
+  text-align: center;
+  padding-top :80px;
+}
+
+.contactText {
+  color :#fff;
+  font-family: 'Noto Serif JP';
+  font-size :20px;
+  padding-bottom:20px;
+}
+
+.button a {
+  text-decoration: none;
+  color :#000;
+  font-family: 'Noto Serif';
+  font-weight: bold;
+}
+
+.button{
+  border-radius: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width :235px;
+  height :69px;
+  margin :0 auto;
+  background-color :#F7D43F
+}
+
+.contactSub{
+  font-family: 'Noto Serif';
+  color :#4C4D4F;
+}
+
+.contactSub p {
+  font-size :90px;
+  margin :0;
+}
+
+footer {
+  height :80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width:375px){
+  .conteiner{
+    width :375px;
+    margin :0 auto;
+  }
+.slide img{
+    display :block;
+    text-align: center;
+    margin :0 auto;
+    width :375px;
+  }
+}
+
+.ityped-cursor {
+    font-size: 1em;
+    opacity: 1;
+    -webkit-animation: blink 0.3s infinite;
+    -moz-animation: blink 0.3s infinite;
+    animation: blink 0.3s infinite;
+    animation-direction: alternate;
+}
+
+@keyframes blink {
+    100% {
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes blink {
+    100% {
+        opacity: 0;
+    }
+}
+
+@-moz-keyframes blink {
+    100% {
+        opacity: 0;
+    }
+}
